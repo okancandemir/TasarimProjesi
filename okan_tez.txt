@@ -1,0 +1,80 @@
+ÇİFTLİK BİLGİSİ
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class CiftlikBilgisi5 : Form
+    {
+        public CiftlikBilgisi5()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox2;
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnilerle1_Click(object sender, EventArgs e)
+        {
+            SaglikBilgisi6 frm7 = new SaglikBilgisi6();
+            frm7.Show();
+            this.Hide();
+        }
+    }
+}
+
+
+YEMLERİN ÖNERİLMESİ
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class YemlerinOnerilmesi8 : Form
+    {
+        public YemlerinOnerilmesi8()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RasyonBeklentileri9 frm13 = new RasyonBeklentileri9();
+            frm13.Show();
+            this.Hide();
+        }
+    }
+}
